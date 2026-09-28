@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym | Fitness & Strength</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#f5f5f5;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:#111827;border-bottom:1px solid #263244;padding:16px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:800;color:#ffcc00}
+nav ul{display:flex;gap:24px;list-style:none}
+nav a:hover{color:#ffcc00}
+.hero{min-height:75vh;display:flex;align-items:center;padding:70px 7%;background:linear-gradient(90deg,#0d1117 25%,rgba(13,17,23,.78),rgba(13,17,23,.25)),url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero-content{max-width:650px}
+.badge{display:inline-block;background:#ffcc00;color:#111;padding:7px 14px;border-radius:20px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:19px;color:#d7dbe2;margin-bottom:28px}
+.btn{display:inline-block;background:#ffcc00;color:#111;padding:13px 22px;border-radius:7px;font-weight:800;margin-right:10px}
+.btn.dark{background:#fff}
+section{padding:70px 7%}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:36px}
+.title p{color:#aeb7c4}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#151c27;border:1px solid #283445;border-radius:12px;padding:25px}
+.card h3{margin:10px 0;color:#ffcc00}
+.card p{color:#b8c0cb}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;background:#ffcc00;color:#111}
+.stat{text-align:center;padding:18px}
+.stat b{display:block;font-size:30px}
+.plan{position:relative}
+.price{font-size:34px;font-weight:800;margin:12px 0;color:#fff}
+.plan ul{list-style:none;color:#c4cbd5;margin:15px 0}
+.plan li{padding:7px 0;border-bottom:1px solid #263244}
+table{width:100%;border-collapse:collapse;background:#151c27;border-radius:10px;overflow:hidden}
+th,td{padding:15px;border-bottom:1px solid #293548;text-align:left}
+th{background:#ffcc00;color:#111}
+.trainer{overflow:hidden}
+.trainer img{width:100%;height:230px;object-fit:cover;border-radius:8px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:13px;background:#111827;border:1px solid #334155;color:#fff;border-radius:7px}
+textarea{min-height:130px}
+footer{text-align:center;padding:30px;background:#080b10;color:#9ca6b5}
+@media(max-width:800px){
+nav{flex-direction:column;gap:12px}
+nav ul{gap:12px;flex-wrap:wrap;justify-content:center;font-size:14px}
+.cards,.stats,.contact{grid-template-columns:1fr}
+table{font-size:13px}
+.hero{min-height:65vh;padding:55px 7%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">🏋️ POWERFIT GYM</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#trainers">Trainers</a></li>
+    <li><a href="#plans">Plans</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <span class="badge">STRONGER EVERY DAY</span>
+    <h1>Build Strength.<br>Build Confidence.</h1>
+    <p>PowerFit Gym is a modern fitness center with strength training, cardio, personal training and group classes for beginners and regular members.</p>
+    <a class="btn" href="#plans">View Memberships</a>
+    <a class="btn dark" href="#contact">Join Now</a>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="stat"><b>1500+</b>Members</div>
+  <div class="stat"><b>12+</b>Certified Trainers</div>
+  <div class="stat"><b>25+</b>Weekly Classes</div>
+  <div class="stat"><b>6 AM–10 PM</b>Open Daily</div>
+</section>
+
+<section id="about">
+  <div class="title"><h2>About PowerFit</h2><p>Everything you need for a consistent fitness routine.</p></div>
+  <div class="cards">
+    <div class="card"><h3>Modern Equipment</h3><p>Strength machines, free weights, treadmills, cycles and functional training equipment.</p></div>
+    <div class="card"><h3>Personal Guidance</h3><p>Our trainers can help members understand exercises, routines and safe gym practices.</p></div>
+    <div class="card"><h3>Friendly Community</h3><p>A welcoming environment for beginners and experienced gym members.</p></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="title"><h2>Our Services</h2><p>Choose a program that matches your goals.</p></div>
+  <div class="cards">
+    <div class="card"><h3>🏋️ Strength Training</h3><p>Free weights, machines and guided strength workouts.</p></div>
+    <div class="card"><h3>🏃 Cardio Training</h3><p>Treadmills, cycles and cardio sessions for endurance.</p></div>
+    <div class="card"><h3>🧘 Yoga & Mobility</h3><p>Beginner-friendly flexibility, mobility and relaxation classes.</p></div>
+    <div class="card"><h3>🔥 HIIT</h3><p>Group interval workouts designed around short, active sessions.</p></div>
+    <div class="card"><h3>🥊 Boxing Fitness</h3><p>Fitness-focused boxing drills and conditioning sessions.</p></div>
+    <div class="card"><h3>👤 Personal Training</h3><p>One-to-one sessions with a trainer based on your routine.</p></div>
+  </div>
+</section>
+
+<section id="trainers">
+  <div class="title"><h2>Our Trainers</h2><p>Sample trainer data — replace with your real gym details.</p></div>
+  <div class="cards">
+    <div class="card trainer"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80"><h3>Arjun Kumar</h3><p>Strength Coach • 7 Years Experience</p></div>
+    <div class="card trainer"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80"><h3>Priya Sharma</h3><p>Fitness Coach • 5 Years Experience</p></div>
+    <div class="card trainer"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80"><h3>Rahul Verma</h3><p>HIIT Coach • 6 Years Experience</p></div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="title"><h2>Membership Plans</h2><p>Sample pricing — edit these values for your gym.</p></div>
+  <div class="cards">
+    <div class="card plan"><h3>Basic</h3><div class="price">₹999 / month</div><ul><li>✔ Gym access</li><li>✔ Cardio & strength area</li><li>✔ Locker access</li></ul><a class="btn" href="#contact">Join</a></div>
+    <div class="card plan"><h3>Premium</h3><div class="price">₹2,499 / 3 months</div><ul><li>✔ Full gym access</li><li>✔ Group classes</li><li>✔ Fitness assessment</li></ul><a class="btn" href="#contact">Join</a></div>
+    <div class="card plan"><h3>Annual</h3><div class="price">₹7,999 / year</div><ul><li>✔ Full gym access</li><li>✔ Group classes</li><li>✔ 4 personal training sessions</li></ul><a class="btn" href="#contact">Join</a></div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="title"><h2>Weekly Class Schedule</h2><p>Sample timetable.</p></div>
+  <table>
+    <tr><th>Day</th><th>Morning</th><th>Afternoon</th><th>Evening</th></tr>
+    <tr><td>Monday</td><td>6:30 AM Yoga</td><td>1:00 PM Strength</td><td>7:00 PM HIIT</td></tr>
+    <tr><td>Tuesday</td><td>6:30 AM Cardio</td><td>1:00 PM Boxing</td><td>7:00 PM Strength</td></tr>
+    <tr><td>Wednesday</td><td>6:30 AM Yoga</td><td>1:00 PM Strength</td><td>7:00 PM HIIT</td></tr>
+    <tr><td>Thursday</td><td>6:30 AM Cardio</td><td>1:00 PM Boxing</td><td>7:00 PM Yoga</td></tr>
+    <tr><td>Friday</td><td>6:30 AM Strength</td><td>1:00 PM Cardio</td><td>7:00 PM HIIT</td></tr>
+    <tr><td>Saturday</td><td>7:00 AM Full Body</td><td>2:00 PM Personal Training</td><td>6:00 PM Zumba</td></tr>
+  </table>
+</section>
+
+<section id="contact">
+  <div class="title"><h2>Contact Us</h2><p>Sample contact information — replace it with your real details.</p></div>
+  <div class="contact">
+    <div class="card">
+      <h3>PowerFit Gym</h3>
+      <p>📍 Main Road, Guntur, Andhra Pradesh</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ info@powerfitgym.example</p>
+      <p>🕐 Monday–Sunday: 6:00 AM – 10:00 PM</p>
+    </div>
+    <div class="card">
+      <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn" type="submit" style="border:0;cursor:pointer">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PowerFit Gym. All rights reserved.</p>
+  <p>Demo website data — replace sample information with your actual gym data.</p>
+</footer>
+</body>
+</html>
