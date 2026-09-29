@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PowerFit Gym</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: white;
+            padding: 35px 20px;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 1100px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 10px auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #e69500;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #ccc;
+        }
+
+        .card h3 {
+            color: orange;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        /* Membership */
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #111;
+            margin: 15px 0;
+        }
+
+        .plan-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About */
+        .about {
+            background: #111;
+            color: white;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Contact */
+        .contact {
+            background: white;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>💪 POWERFIT GYM</h1>
+        <p>Build Your Strength • Build Your Confidence</p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- HOME -->
+
+    <div class="hero" id="home">
+
+        <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
+            alt="Modern Gym">
+
+        <h2>Welcome to PowerFit Gym</h2>
+
+        <p>
+            Transform your body, improve your strength and
+            build a healthier lifestyle with PowerFit Gym.
+        </p>
+
+        <p>
+            We provide modern equipment, professional trainers
+            and fitness programs for beginners and experienced members.
+        </p>
+
+        <a href="#membership" class="button">JOIN NOW</a>
+
+    </div>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>About Our Gym</h2>
+
+        <p>
+            PowerFit Gym is a modern fitness center designed to
+            help people achieve their fitness goals. Our gym provides
+            quality equipment, experienced trainers and a friendly
+            environment for everyone.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🏋️ Strength Training</h3>
+
+                <p>
+                    Build strength and improve your fitness
+                    with modern equipment.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>🏃 Cardio Training</h3>
+
+                <p>
+                    Improve your stamina with treadmill,
+                    cycling and cardio workouts.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>🧘 Fitness Classes</h3>
+
+                <p>
+                    Join guided fitness classes suitable
+                    for different fitness levels.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>💪 Personal Training</h3>
+
+                <p>
+                    Get personal guidance from our
+                    experienced fitness trainers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAINERS -->
+
+    <section id="trainers">
+
+        <h2>Our Trainers</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Rahul</h3>
+
+                <p>Certified Fitness Trainer</p>
+                <p>Experience: 5 Years</p>
+                <p>Strength & Fitness Coach</p>
+            </div>
+
+
+            <div class="card">
+                <h3>Priya</h3>
+
+                <p>Personal Fitness Trainer</p>
+                <p>Experience: 4 Years</p>
+                <p>Fitness & Wellness Coach</p>
+            </div>
+
+
+            <div class="card">
+                <h3>Arjun</h3>
+
+                <p>Strength Coach</p>
+                <p>Experience: 6 Years</p>
+                <p>Weight Training Expert</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMBERSHIP -->
+
+    <section id="membership">
+
+        <h2>Membership Plans</h2>
+
+        <div class="cards">
+
+            <!-- Basic -->
+
+            <div class="card">
+
+                <h3>Basic Plan</h3>
+
+                <p>1 Month</p>
+
+                <div class="price">₹999</div>
+
+                <p>✔ Gym Access</p>
+                <p>✔ Basic Equipment</p>
+                <p>✔ Locker Facility</p>
+
+                <a href="#contact" class="plan-button">
+                    Choose Plan
+                </a>
+
+            </div>
+
+
+            <!-- Premium -->
+
+            <div class="card">
+
+                <h3>Premium Plan</h3>
+
+                <p>3 Months</p>
+
+                <div class="price">₹2499</div>
+
+                <p>✔ Gym Access</p>
+                <p>✔ Fitness Classes</p>
+                <p>✔ Trainer Guidance</p>
+
+                <a href="#contact" class="plan-button">
+                    Choose Plan
+                </a>
+
+            </div>
+
+
+            <!-- Annual -->
+
+            <div class="card">
+
+                <h3>Annual Plan</h3>
+
+                <p>12 Months</p>
+
+                <div class="price">₹7999</div>
+
+                <p>✔ Full Gym Access</p>
+                <p>✔ Fitness Classes</p>
+                <p>✔ Trainer Guidance</p>
+
+                <a href="#contact" class="plan-button">
+                    Choose Plan
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Location: Hyderabad, Telangana</p>
+
+        <p>📞 Phone: +91 98765 43210</p>
+
+        <p>📧 Email: powerfitgym@example.com</p>
+
+        <h3>Opening Hours</h3>
+
+        <p>Monday - Saturday: 5:00 AM - 10:00 PM</p>
+
+        <p>Sunday: 6:00 AM - 1:00 PM</p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 PowerFit Gym</p>
+        <p>All Rights Reserved</p>
+
+    </footer>
+
+</body>
+
+</html>
